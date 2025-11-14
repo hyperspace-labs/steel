@@ -8,7 +8,7 @@ Steel is a set of libraries for the VHDL hardware description language that prov
 
 Run the following Orbit command:
 ```
-orbit install --url https://github.com/hyperspace-labs/steel/archive/refs/tags/0.1.0.zip
+orbit install --url https://github.com/hyperspace-labs/steel/archive/refs/heads/main.zip
 ```
 
 Add the following line to your Orbit.toml:
