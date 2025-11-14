@@ -4,11 +4,13 @@
 
 Steel is a set of libraries for the VHDL hardware description language that provides support for improved type names, type casting, and common functions. It is tested using the IEEE library implementations for the VHDL 2008 standard.
 
-## Installing
+## Install
+
+> __Note__: This project is published under the [Huron](https://github.com/hyperspace-labs/huron) channel.
 
 Run the following Orbit command:
 ```
-orbit install --url https://github.com/hyperspace-labs/steel/archive/refs/heads/main.zip
+orbit install steel
 ```
 
 Add the following line to your Orbit.toml:
