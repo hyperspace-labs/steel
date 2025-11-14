@@ -65,7 +65,7 @@ begin
     vv0 := logics(to_usign(16, vv0'length));
     assert to_str(vv0) = "0000" report "vv0 = " & to_str(vv0) severity error;
     
-    assert to_str(now) = "0 ps" severity error;
+    assert to_str(now) = "0 ps" report "got time as " & to_str(now) severity error;
 
     assert to_logics(b0) = "1" severity error;
 
