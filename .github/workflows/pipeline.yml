@@ -1,0 +1,26 @@
+name: Pipeline
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    container:
+      image: chaseruskin/groovy-guitar:latest
+    steps:
+      - name: Fetch repository
+        uses: actions/checkout@v4
+
+      - name: Log tools
+        run: bash /etc/tools
+
+      - name: Configure Orbit
+        run: |
+          pip install git+https://github.com/chaseruskin/aquila.git
+          orbit config --push include="$(aquila-config --config-path)"
+
+      - name: Perform static analysis
+        run: just compile
+      
+      - name: Run tests
+        run: just test

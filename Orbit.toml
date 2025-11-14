@@ -1,0 +1,10 @@
+[project]
+name = "steel"
+description = "A set of packages extending standard functionality"
+version = "0.1.0"
+uuid = "7hex7l1oem1qefisd25jkcni2"
+library = "stl"
+license = "Apache-2.0"
+public = ["src"]
+
+[dependencies]
