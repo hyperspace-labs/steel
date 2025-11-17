@@ -6,4 +6,5 @@ version = 1
 name = "steel"
 version = "0.1.0"
 uuid = "7hex7l1oem1qefisd25jkcni2"
+source = "https://github.com/hyperspace-labs/steel.git"
 dependencies = []

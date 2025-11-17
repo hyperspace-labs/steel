@@ -1,8 +1,9 @@
 [project]
 name = "steel"
-description = "A set of packages extending standard functionality"
 version = "0.1.0"
 uuid = "7hex7l1oem1qefisd25jkcni2"
+description = "A set of packages extending standard functionality"
+repository = "https://github.com/hyperspace-labs/steel.git"
 library = "stl"
 license = "Apache-2.0"
 public = ["src"]
