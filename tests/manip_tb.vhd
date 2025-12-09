@@ -22,6 +22,9 @@ use work.manip.all;
 use work.cast.all;
 
 entity manip_tb is
+  generic (
+    FOO: bool
+  );
 end entity;
 
 architecture tst of manip_tb is

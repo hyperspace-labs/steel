@@ -19,14 +19,11 @@ jobs:
           pip install git+https://github.com/chaseruskin/aquila.git
           orbit config --push include="$(aquila-config --config-path)"
 
-      - name: Perform static analysis
-        run: just compile
-      
       - name: Run tests
-        run: just test
+        run: orbit test --target ghdl
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
           name: test
-          path: target/ghdl/regressions
+          path: target/ghdl/results
